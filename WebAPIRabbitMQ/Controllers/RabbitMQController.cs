@@ -4,6 +4,8 @@ using WebAPIRabbitMQ.Services;
 
 namespace WebAPIRabbitMQ.Controllers
 {
+    [ApiController]
+    [Route("mails")]
     public class RabbitMQController : ControllerBase
     {
         private readonly IEmailProducer messagePublisher;
